@@ -1,0 +1,18 @@
+programa{
+	funcao inicio(){
+		inteiro n
+
+		escreva("Forneça um número n: ")
+		leia(n)
+
+		limpa()
+
+		escreva("### TABUADA DE ", n, " ###\n\n")
+		
+		para(inteiro i = 1; i <=10; i++){
+
+			escreva(n, " x ", i, " = ", n * i, "\n")
+			
+		}
+	}
+}
