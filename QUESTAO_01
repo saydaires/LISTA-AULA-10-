@@ -1,0 +1,21 @@
+programa{
+	funcao inicio(){
+		
+		real chico = 1.50, juca = 1.10
+		inteiro anos = 0
+
+		enquanto(juca <= chico){
+
+			chico += 0.02
+			juca += 0.03
+			// A cada iteração, é somado +1 à variável "anos", fornecendo assim o total de iterações no código (anos).
+			anos++
+
+			escreva("\nJ = ", juca)
+			escreva("\nC = ", chico)
+	
+		}
+
+		escreva("\n\n\nSão necessários ", anos, " anos Para Juca ultrapassar Chico")
+	}
+}
