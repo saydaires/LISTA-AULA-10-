@@ -1,0 +1,19 @@
+programa{
+	funcao inicio(){
+		inteiro n
+
+		faca{
+			escreva("Digite n = ")
+			leia(n)
+			
+			limpa()
+			
+		}enquanto(n < 0 ou n > 10)
+
+		para(inteiro i = 0; i <= 10; i++){
+			escreva("\n", n, " x ", i, " = ", n * i)
+		
+		}
+	
+	}
+}
