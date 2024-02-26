@@ -1,0 +1,15 @@
+programa{
+	funcao inicio(){
+		caracter c
+
+		faca{
+
+			escreva("Forneça seu sexo(M/F/I): ")
+			leia(c)
+
+			limpa()
+			
+		}enquanto(c != 'M' e c != 'F' e c != 'I')
+	
+	}
+}
