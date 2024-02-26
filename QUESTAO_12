@@ -1,0 +1,16 @@
+programa{
+	funcao inicio(){
+		inteiro n, soma = 0
+		
+		faca{
+			escreva("n = ")
+			leia(n) 
+
+			soma += n			
+		
+		}enquanto(n != 0)
+
+		escreva("\nA soma dos números digitados é: ", soma)
+		
+	}
+}
