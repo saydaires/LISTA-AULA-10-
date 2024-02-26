@@ -1,0 +1,14 @@
+programa{
+	funcao inicio(){
+		inteiro n, fatorial = 1
+
+		escreva("Digite n = ")
+		leia(n)
+
+		para(inteiro i = 1; i <= n; i++){
+			// O 'fatorial' será a multiplicação cumulativa de cada valor de 'i' executado pelo programa.
+			fatorial *= i
+		}
+		escreva("\n", n, "! = ", fatorial)
+	}
+}
