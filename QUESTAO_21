@@ -1,0 +1,33 @@
+programa{
+	funcao inicio(){
+		real totalpares = 0, somapares = 0, media = 0, totalimpares = 0, mediageral = 0, totalgeral = 0, somageral = 0
+          inteiro n
+		
+		faca{
+			escreva("Digite n = ")
+			leia(n)
+			
+			se(n > 0 e n % 2 == 0){
+				totalpares++
+				somapares += n
+				media = somapares / totalpares
+				
+			}senao se(n > 0 e n % 2 == 1){
+				totalimpares++
+			}
+
+			se(n != 0){
+			      totalgeral++
+			      somageral += n
+			      mediageral = somageral / totalgeral
+			}
+		
+		}enquanto( n != 0)
+
+		escreva("\nA quantidade de pares é ", totalpares, ", e de ímpares é ", totalimpares)
+		
+		escreva("\nA média dos números pares é: ", media)
+
+		escreva("\nA média geral dos números é: ", mediageral)
+	}
+}
