@@ -1,0 +1,12 @@
+programa{
+	funcao inicio(){
+
+		para(inteiro i = 100; i <= 200; i++){
+
+			 se(i % 2 == 1){
+
+			 	escreva("\n", i)
+			 }
+		}
+	}
+}
