@@ -1,0 +1,22 @@
+programa{
+	funcao inicio(){
+		inteiro n
+		real media = 0, soma = 0, denominador = 0
+
+		faca{
+			escreva("n = ")
+			leia(n)
+
+			se(n > 0 e n % 2 == 0){
+				soma += n
+				denominador++
+				media = soma / denominador
+			}
+		}enquanto(n != 0)
+
+		se(denominador > 0){
+
+			escreva("A média dos pares digitados é: ", media)
+		}
+	}
+}
