@@ -1,0 +1,56 @@
+programa{
+	funcao inicio(){
+		real salario = 0, filhos = 0, denominador = 0, mediasalario = 0
+		real mediafilhos = 0, salariof, filhosf, numerador = 0, maiorsalario = 0
+		inteiro i
+
+
+		faca{
+			escreva("### PESQUISA DA PREFEITURA ###\n")
+			escreva("\nFORNEÇA O SEU SALÁRIO EM REAIS: ")
+			leia(salariof)
+			salario += salariof
+			
+			// O programa irá comparar se o usuário digitou um salário maior que o 'atual' maiorsalario.
+			// Se a condição acima for verdadeira, o programa irá armazenar o 'novo' maiorsalario como sendo salariof.
+			se(salariof > maiorsalario){
+				
+				maiorsalario = salariof
+			}
+
+			
+			
+			denominador++
+			
+			se(salariof <= 1000){
+				numerador++
+			}
+			
+			escreva("\nFORNEÇA QUANTIDADE DE FILHOS: ")
+			leia(filhosf)
+			filhos += filhosf
+		
+
+			mediasalario = salario / denominador
+			mediafilhos = filhos / denominador
+
+			escreva("\nDESEJA CONTINUAR A PESQUISA? (1-SIM|2-NÃO): ")
+			leia(i)
+
+			se(i == 1){
+				
+				limpa()
+			}
+			
+		}enquanto(i != 2)
+
+		limpa()
+
+		escreva("### RESULTADO DA PESQUISA ###\n")
+		escreva("\nMÉDIA SALARIAL DA POPULAÇÃO: R$ ", mediasalario)
+		escreva("\nMÉDIA DE FILHOS DA POPULAÇÃO: ", mediafilhos)
+		escreva("\nPERCENTUAL DE PESSOAS COM SALÁRIO DE ATÉ R$ 1000: ", 100 * (numerador / denominador), " %")
+          escreva("\nMAIOR SALÁRIO: R$ ", maiorsalario)
+		
+	}
+}
