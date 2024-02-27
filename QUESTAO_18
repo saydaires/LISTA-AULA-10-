@@ -1,0 +1,60 @@
+programa {
+	
+	funcao inicio() {
+		inteiro cand1 = 0, cand2 = 0, cand3 = 0
+		inteiro cand4 = 0, nulo = 0, branco = 0
+		inteiro voto
+
+		faca {
+			escreva("### Eleições 2024 ###\n\n")
+			escreva("1- Candidato 1\n")
+			escreva("2- Candidato 2\n")
+			escreva("3- Candidato 3\n")
+			escreva("4- Candidato 4\n")
+			escreva("5- Nulo\n")
+			escreva("6- Branco\n")
+			escreva("7- Encerrar\n\n")
+			
+			escreva("Escolha uma opção: ")
+			leia(voto)
+			
+			limpa()
+			
+			escolha(voto) {
+				caso 1:
+					cand1++
+					pare
+				caso 2:
+					cand2++
+					pare
+				caso 3:
+					cand3++
+					pare
+				caso 4:
+					cand4++
+					pare
+				caso 5:
+					nulo++
+					pare
+				caso 6:
+					branco++
+					pare
+				caso 7:
+					escreva("Votação encerrada!")
+					pare
+				caso contrario:
+					escreva("Opção inválida!")
+			}
+		} enquanto (voto != 7)
+
+		limpa()
+
+		escreva("Resultado final\n")
+		escreva("\nCandidato 1: ", cand1)
+		escreva("\nCandidato 2: ", cand2)
+		escreva("\nCandidato 3: ", cand3)
+		escreva("\nCandidato 4: ", cand4)
+		escreva("\nNulos: ", nulo)
+		escreva("\nBrancos: ", branco)
+	}
+}
