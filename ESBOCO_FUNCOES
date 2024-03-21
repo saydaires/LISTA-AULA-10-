@@ -1,0 +1,48 @@
+/*Crie uma calculadora que realiza as 
+operações básicas (adição, subtração, multiplicação, divisão) 
+utilizando funções separadas para cada operação.*/
+
+#include <stdio.h>
+
+int calculadora(int n1, int n2, char operador) {
+	int resultado;
+	
+	switch(operador){
+		case '+':
+			resultado = n1 + n2;
+		break;
+		case '-':
+			resultado = n1 - n2;
+		break;
+		case '*':
+			
+			resultado = n1 * n2;
+		break;
+		case '/':
+			resultado = n1 / n2;
+		break;	
+	}
+	
+	return(resultado);
+}
+
+main() {
+	int A, B, operacao;
+	char ch;
+	
+	printf("A = ");
+	scanf("%d", &A);
+	
+	
+	printf("B = ");
+	scanf("%d", &B);
+	
+	fflush(stdin);
+	
+	printf("+ - * / = ");
+	scanf("%c", &ch);
+	
+	operacao = calculadora(A, B, ch);
+	
+	printf("Resultado = %d", operacao);
+}
